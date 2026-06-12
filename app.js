@@ -3,7 +3,7 @@ const START_DATE = '2022-01-31T00:00:00'; // altere aqui: data de início do cas
 const couple = {
   name: 'Ronia & Wesley',
   synopsis: 'Duas vidas, uma história — memórias, risos e filmes compartilhados. Um romance que se constrói em pequenas cenas do dia a dia.',
-  cover: 'https://static.vecteezy.com/ti/fotos-gratis/t2/37371298-ai-gerado-uma-casal-do-amor-faz-uma-em-forma-de-coracao-gesto-enquanto-a-por-do-sol-ai-fundo-foto.jpg'
+  cover: 'IMG_9346.jpeg'
 };
 
 /* Sample assets (unsplash for images, sample video url) */

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Nosso Filme</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+</head>
+<body>
+  <div class="site-title" aria-hidden="false">Loveflix <span class="heart">♥</span></div>
+  <main id="app">
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <img class="hero-cover" id="heroCover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f9f8b0a6c3b0d9c99f2b4f6f4b8f5a1" alt="Capa do casal" />
+      <div class="hero-content">
+        <h1 id="coupleName">Ronia & Wesley</h1>
+        <p class="synopsis" id="synopsis">Duas vidas, uma história — memórias, risos e filmes compartilhados. Um romance que se constrói em pequenas cenas do dia a dia.</p>
+        <div class="meta">
+          <div class="counter-block">
+            <div class="counter-title">Tempo da nossa história</div>
+            <div class="counter" id="timeTogether" aria-live="polite">0 dias</div>
+          </div>
+          <div class="actions">
+            <button id="playTrailer" class="btn">Play</button>
+            <button id="editBtn" class="btn ghost">Editar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2>Momentos</h2>
+      <div class="row" id="photosRow" tabindex="0" aria-label="Galeria de Fotos">
+        <!-- items inserted by JS -->
+      </div>
+    </section>
+
+    <section class="catalog">
+      <h2>Vídeos</h2>
+      <div class="row" id="videosRow" tabindex="0" aria-label="Galeria de Vídeos">
+        <!-- items inserted by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for image/video -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <button id="modalClose" class="modal-close" aria-label="Fechar">✕</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
